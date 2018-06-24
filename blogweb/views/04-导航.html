@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      /*
+       link  正常状态
+      hover  鼠标移动到上面
+      active 点击到上面
+       */
+
+
+
+        a:link{background-color: black}
+        a:hover{background-color: red}
+        a:active{background-color: aqua}
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #nav{
+            background-color: black;
+            width: auto;
+            display: flex;
+            margin: 0px;
+
+
+        }
+        #nav>ul{
+            display: flex;
+            flex-wrap: nowrap;
+
+        }
+
+
+        #nav li{
+            display: flex;
+            list-style-type: none;
+
+            border: 0.5px solid;
+            flex-grow: 1;
+
+
+
+        }
+        #nav a{
+            text-align: center;
+            display: inline-block;
+            margin: 10px;
+            height: 100%;
+            height: auto;
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+
+        }
+
+    </style>
+</head>
+<body>
+{{/*text-decoration: none;   <!--去除下划线-->*/}}
+<div id="nav">
+    <ul>
+        <li><a href="#">集团介绍</a></li>
+        <li><a href="#">产品更新</a></li>
+        <li><a href="#">技术研发</a></li>
+        <li><a href="#">国际合作</a></li>
+        <li><a href="#">投资者关系</a></li>
+        <li><a href="#">新闻资讯</a></li>
+        <li><a href="#">人力资源</a></li>
+
+    </ul>
+
+</div>
+
+</body>
+</html>

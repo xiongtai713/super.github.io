@@ -1,0 +1,142 @@
+
+#main{
+    margin: 100px 50px 50px 50px;
+
+
+
+}
+.error{
+    color: red;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #666;
+}
+body{
+    margin: 0px;
+}
+.global-color{
+    color: #0abc9c;
+}
+
+/*导航 block------------------------------------------------------------------------------*/
+#nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0abc9c;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+}
+#nav li{
+    display: inline-block;
+    margin: 0px;
+
+}
+#nav ul{
+    padding: 10px;
+}
+
+#nav a{
+    font-size: 20px;
+    padding: 10px;
+}
+#nav-write-article{
+    margin-left: 20px;
+}
+#nav-login{
+    margin-right: 20px;
+}
+
+
+
+/*首页 block------------------------------------------------------------------------------*/
+#home-block-item>h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+#home-block-item>p{
+    margin: 5px 0px;
+
+}
+.home-block-item-update{
+    text-align: right;
+
+}
+.home-block-item-update>a{
+    margin-left: 10px;
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #0abc9c;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+/*首页 footer-----------------------------------------------------------------------------*/
+#home-footer{
+    text-align: center;
+    margin: 30px;
+
+}
+
+.disable{
+    color: #888;
+}
+
+/*写入文章--------------------------------------------------------------------------------*/
+#write-art-form>input,#write-art-form>textarea{
+    width: 100%;
+    padding: 10px;
+}
+
+#main input{
+    margin: 10px;
+    height: 20px;
+    width: 98%;
+
+}
+#main textarea{
+    margin: 10px;
+    width: 98%;
+}
+#jj{
+    height: 60px;
+}
+#content{
+    height: 400px;
+}
+
+#write-art-form>div{
+    margin: 10px 0px;
+}
+/*标签列表--------------------------------------------------------------------------------*/
+
+#tags-list>div{
+margin: 10px 80px;
+}
+#tags-list>a{
+    font-size: 40px;
+}
+
+/*相册------------------------------------------------------------------------------------*/
+#album-box{
+    margin: 0px auto;
+    width: 844px;
+    height: 1000px;
+    font-size: 0px;
+}
+.album-item{
+    border: 1px solid #0abc9c;
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    margin: 10px 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

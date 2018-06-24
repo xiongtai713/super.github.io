@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link href="../static/css/blogsheet.css" rel="stylesheet">
+</head>
+<body>
+{{template "/block/nav.html" .}}   <!--引用模板的时候,如果有变量,需要在引入的后面添加点 "."-->
+<div id="main">
+{{.Content}}
+
+{{if .HasFooter}}
+    <div id="home-footer">
+        <!--判断 如果PageCode.HasPre为真就走.PageCode.PreLink 链接 否则 没有链接-->
+        <a {{if .PageCode.HasPre}} href="{{.PageCode.PreLink}}"{{else}}class="disable" {{end}}>上一页</a>
+        <span>{{.PageCode.ShowPage}}</span>
+        <a {{if .PageCode.HasNext}} href="{{.PageCode.NextLink}}"{{else}}class="disable" {{end}}>下一页</a>
+
+    </div>
+
+{{end}}
+
+</div>
+
+
+</body>
+</html>
